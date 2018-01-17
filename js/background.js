@@ -29,7 +29,7 @@ const updateBalance = addressJSON => {
 };
 const checkWallet = wallet => {
   wallet = String(wallet).toUpperCase();
-  if(wallet && /\d\L/.test(wallet)) return getBalance(wallet);
+  if(wallet && /\d\X/.test(wallet)) return getBalance(wallet);
   const errors = {
     "wallet": "Wallet address is not valid"
   };
