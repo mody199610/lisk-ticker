@@ -66,7 +66,7 @@ const getColor = (oldV, newV) =>
 
 const updateData = value => {
   storage.sync.get(["feed"], ({feed}) => {
-    if (feed === "oxy") {
+    if (feed === "lsk") {
       return storage.sync.set({data: value.tickers.LSK});
     }
 
